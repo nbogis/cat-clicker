@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <ul id="cat-list"></ul>
+    <div>
+
+        <h2 data-bind="text: name"></h2> <!-- this will be binds to name in js -->
+        <h3 data-bind="text: level"></h3>
+        <div data-bind="text: clickCount"></div>
+        <!-- if img is clicked, call incrementCounter method and if imgSrc change, update the change -->
+        <img src="" alt="cute cat" data-bind="click: incrementCounter, attr: {src: imgSrc}">
+
+    </div>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
